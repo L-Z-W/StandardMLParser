@@ -1,0 +1,8 @@
+val my_out = TextIO.openOut("output.txt");  
+  
+fun writeFile (writeRecod:StuRecord) =  
+    let  
+        val str : string = "name:"^(#name writeRecod)^",Gaoshu:"^(Real.toString(#gaoshu writeRecod))^",English:"^(Real.toString(#english writeRecod))^",Computer:"^(Real.toString(#computer writeRecod))^",Avage:"^(Real.toString(#avage writeRecod))^"\n"  
+    in  
+        TextIO.output(my_out,str)  
+    end
